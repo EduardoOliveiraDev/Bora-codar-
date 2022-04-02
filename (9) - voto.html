@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora codar 9</title>
+</head>
+<body>
+    
+    <script>
+
+        alert("Considerando que estamos em 2022, Informe o ano de seu nascimento para saber se seu voto é obrigatorio!")
+
+        var ano = parseInt(prompt("Informe seu ano de nascimento: "))
+        idade = 2022 - ano
+
+        if(idade<=15){
+            alert("Voto proibido!")
+        } else if(idade<18){
+            alert("Voto opicional!")
+        } else if(idade<70){
+            alert("voto obrigatorio!")
+        } else {
+            alert("voto opicional!")
+        }
+
+    </script>
+
+    <h1> Informaçoes de voto</h1>
+    <h3> pessoa menor de 16 anos não pode votar</h3>
+    <h3> pessoa entre 16 a 17 anos pode votar, mas não é obrigatorio</h3>
+    <h3> pessoa entre 18 a 69 anos é obrigado a votar!</h3>
+    <h3> pessoa com mais de 69 anos o voto é opicional!</h3>
+</body>
+</html>

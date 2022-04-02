@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora codar 8</title>
+</head>
+<body>
+    
+    <script>
+
+        alert("informe suas notas no processo!")
+        alert("só serão aceito notas entre 0 e 10!")
+
+        var nota1 = parseInt(prompt("digite sua primeira nota"))
+        var nota2 = parseInt(prompt("digite sua segunda nota"))
+        var nota3 = parseInt(prompt("digite sua terciera nota"))
+        var nota4 = parseInt(prompt("digite sua quarta nota"))
+
+        if(0>nota1 || nota1>10){
+            document.write("Sua primeira nota esta incorreta, iremos ajustar a nota " + nota1 + " para 0 <br>")
+            var nota1 = 0
+        } else {
+            document.write("Primeira nota: " + nota1 + "<br>")
+        }
+
+        if(0>nota2 || nota2>10){
+            document.write("Sua segunda nota esta incorreta, iremos ajustar a nota " + nota2 + " para 0 <br>")
+            var nota2 = 0
+        } else {
+            document.write("Segunda nota: " + nota2 + "<br>")
+        }
+
+        if(0>nota3 || nota3>10){
+            document.write("Sua terceira nota esta incorreta, iremos ajustar a nota " + nota3 + " para 0 <br>")
+            var nota3 = 0
+        } else {
+            document.write("Terceira nota: " + nota3 + "<br>")
+        }
+
+        if(0>nota4 || nota4>10){
+            document.write("Sua quarta nota esta incorreta, iremos ajustar a nota " + nota4 + " para 0 <br>")
+            var nota4 = 0
+        } else {
+            document.write("Quarta nota: " + nota4 + "<br>")
+        }
+
+        var resultado = ((nota1 + nota2 + nota3 + nota4)/4)
+        if(resultado>=6){
+            document.write("<br> Sua nota final foi de: " + resultado + " e você esta aprovado, parabens!")
+        } else {
+            document.write("<br> Sua nota final foi de: " + resultado + " e você esta reprovado, tente novamente!")
+        }
+
+
+        
+
+    </script>
+
+</body>
+</html>
